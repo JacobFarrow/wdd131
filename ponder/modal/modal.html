@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="modal.css">
+    <title>Image Modal Gallery</title>
+</head>
+<body>
+
+    <div class="gallery">
+        <img src="images/book-sm.jpg" alt="Book" data-full="images/book-full.jpg" class="thumbnail">
+        <img src="images/couch-sm.jpg" alt="Couch" data-full="images/couch-full.jpg" class="thumbnail">
+        <img src="images/desk-sm.jpg" alt="Desk" data-full="images/desk-full.jpg" class="thumbnail">
+        <img src="images/keyboard-sm.jpg" alt="Keyboard" data-full="images/keyboard-full.jpg" class="thumbnail">
+        <img src="images/phone-sm.jpg" alt="Phone" data-full="images/phone-full.jpg" class="thumbnail">
+        <img src="images/sit-sm.jpg" alt="Sitting" data-full="images/sit-full.jpg" class="thumbnail">
+    </div>
+
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="fullImage">
+        <div id="caption"></div>
+    </div>
+
+    <script src="modal.js"></script>
+</body>
+</html>
