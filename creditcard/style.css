@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+    font-family: sans-serif;
+}
+
+.card {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1.5rem;
+    width: 400px;
+    padding: 2rem;
+    background: linear-gradient(135deg, #2c3e50, #000000);
+    color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.logo {
+    grid-column: 4;
+    font-size: 2.5rem;
+    text-align: right;
+}
+
+.full-width { grid-column: 1 / 5; }
+.half-width { grid-column: 1 / 3; }
+.quarter-width { grid-column: 3 / 5; }
+
+label {
+    display: block;
+    font-size: 0.7rem;
+    margin-bottom: 0.5rem;
+    letter-spacing: 1px;
+}
+
+input {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 0.5rem;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.exp-group {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+button {
+    margin-top: 2rem;
+    width: 100%;
+    padding: 1rem;
+    background-color: #27ae60;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#feedback {
+    text-align: center;
+    margin-top: 1rem;
+    font-weight: bold;
+}
