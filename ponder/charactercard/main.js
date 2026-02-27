@@ -1,9 +1,9 @@
 const character = {
-    name: "Aethelgard",
-    class: "Warrior",
+    name: "Edolfin",
+    class: "Berserker",
     level: 1,
     health: 100,
-    image: "https://byui-cit.github.io/cit261/resources/images/character.png",
+    image: "https://i.redd.it/5jhv9d995zc41.jpg",
 
     attacked: function() {
         if (this.health > 0) {
