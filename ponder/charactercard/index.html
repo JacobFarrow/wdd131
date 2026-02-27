@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Card</title>
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Character Card">
+    <meta property="og:description" content="View and manage character stats.">
+    <meta property="og:url" content="https://yourURLofPage.here">
+    <meta property="og:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Character Card">
+    <meta name="twitter:description" content="View and manage character stats.">
+    <meta name="twitter:image" content="https://yourURLofSocialPreviewImageHere.png">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <main>
+        <div class="card">
+            <img src="https://byui-cit.github.io/cit261/resources/images/character.png" alt="Character Portrait" class="image">
+            <div class="name" id="char-name">Hero</div>
+            
+            <div class="stats">
+                <p><strong>Class:</strong> <span id="char-class">Class</span></p>
+                <p><strong>Level:</strong> <span id="char-level">1</span></p>
+                <p><strong>Health:</strong> <span id="char-health">100</span></p>
+            </div>
+
+            <div class="buttons">
+                <button id="attack-btn">Attacked</button>
+                <button id="level-btn">Level Up</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
