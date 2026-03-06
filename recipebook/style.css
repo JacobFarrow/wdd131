@@ -1,0 +1,159 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1, h2 {
+    font-family: 'Amatic SC', cursive;
+    margin: 0;
+}
+
+header {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-icon {
+    width: 80px;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.search-bar {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    border: 1px solid #333;
+    padding: 5px;
+    margin-bottom: 30px;
+}
+
+.search-bar input {
+    flex-grow: 1;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    outline: none;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar img {
+    width: 25px;
+}
+
+.recipe-card {
+    border: 1px solid #ccc;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-image img {
+    width: 100%;
+    display: block;
+}
+
+.recipe-content {
+    padding: 20px;
+}
+
+.tag {
+    border: 1px solid #333;
+    padding: 2px 8px;
+    font-size: 0.9rem;
+    display: inline-block;
+}
+
+h2 {
+    color: #3498db;
+    font-size: 3rem;
+    margin-top: 10px;
+}
+
+.description {
+    display: none;
+}
+
+footer {
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+
+.social img {
+    width: 25px;
+}
+
+footer p, footer a {
+    font-size: 0.75rem;
+    color: #0000EE;
+}
+
+@media (min-width: 600px) {
+    .recipe-card {
+        flex-direction: row;
+        align-items: stretch;
+    }
+
+    .recipe-image {
+        flex: 1;
+    }
+
+    .recipe-content {
+        flex: 1.5;
+        padding: 20px 40px;
+    }
+
+    .description {
+        display: block;
+        margin-top: 15px;
+        line-height: 1.4;
+        font-size: 1.1rem;
+    }
+
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    .social {
+        order: 2;
+        margin-bottom: 0;
+    }
+
+    footer p {
+        order: 1;
+        margin: 0;
+    }
+}
