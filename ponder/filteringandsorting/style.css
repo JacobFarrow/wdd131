@@ -1,0 +1,53 @@
+body {
+    font-family: sans-serif;
+    padding: 10px;
+    margin: 0;
+}
+
+label {
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+input#search {
+    width: 150px;
+    height: 18px;
+    border: 1px solid #767676;
+}
+
+button#searchBtn {
+    font-size: 0.7rem;
+    padding: 2px 5px;
+    cursor: pointer;
+}
+
+#hike-container {
+    margin-top: 20px;
+}
+
+.hike-card h2 {
+    margin: 0 0 10px 0;
+    font-family: serif;
+}
+
+.hike-tags button {
+    background-color: #efefef;
+    border: 1px solid #767676;
+    padding: 2px 8px;
+    margin-right: 5px;
+    cursor: default;
+}
+
+.hike-card p {
+    margin: 10px 0;
+}
+
+.rating {
+    letter-spacing: 3px;
+}
+
+.no-results {
+    color: #d32f2f;
+    font-style: italic;
+    margin-top: 20px;
+}
