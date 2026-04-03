@@ -1,0 +1,149 @@
+:root {
+    --bg-primary: #0D1117;
+    --accent-blue: #58A6FF;
+    --text-gray: #C9D1D9;
+    --action-green: #238636;
+    --font-heading: 'Roboto Mono', monospace;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-primary);
+    color: var(--text-gray);
+    font-family: var(--font-body);
+    line-height: 1.6;
+}
+
+header {
+    background-color: rgba(13, 17, 23, 0.95);
+    padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 1px solid #30363d;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.nav-logo {
+    height: 150px;
+}
+
+.nav-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    margin-left: 1.5rem;
+    font-family: var(--font-heading);
+}
+
+.nav-links a.active {
+    color: var(--accent-blue);
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+h1, h2, h3 {
+    font-family: var(--font-heading);
+    color: var(--accent-blue);
+    margin-bottom: 1rem;
+}
+
+#hero {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 1.5rem;
+}
+
+.skills-chips span {
+    display: inline-block;
+    background: #21262d;
+    padding: 0.3rem 0.8rem;
+    border-radius: 20px;
+    margin: 0.2rem;
+    font-size: 0.9rem;
+    border: 1px solid #30363d;
+}
+
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: var(--action-green);
+    color: white;
+    border: none;
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    font-family: var(--font-heading);
+    border-radius: 4px;
+    transition: opacity 0.2s;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+}
+
+.project-card {
+    background: #161b22;
+    border: 1px solid #30363d;
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.exp-card {
+    margin-bottom: 2rem;
+    padding-left: 1rem;
+    border-left: 3px solid var(--accent-blue);
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    border-top: 1px solid #30363d;
+    margin-top: 4rem;
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

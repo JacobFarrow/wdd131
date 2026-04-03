@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jacob Farrow | Software Engineer Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="logo.png" alt="Jacob Farrow Logo" class="nav-logo">
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="experience.html">Experience</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <h1>Jacob Farrow</h1>
+            <p class="subtitle">Innovative Software Engineer focused on building robust, scalable systems through future-thinking architectural design.</p>
+            <div class="skills-chips">
+                <span>Python</span>
+                <span>C#</span>
+                <span>.NET Core</span>
+                <span>JavaScript</span>
+                <span>SQL</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Project Gallery</h2>
+            <div class="filter-controls">
+                <button class="filter-btn" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="Python">Python</button>
+                <button class="filter-btn" data-filter="C#">C#</button>
+                <button class="filter-btn" data-filter=".NET">.NET</button>
+            </div>
+            <div id="project-grid" class="project-grid"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 | Jacob Farrow | Rexburg, ID</p>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
